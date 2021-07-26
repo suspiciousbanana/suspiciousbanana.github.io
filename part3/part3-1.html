@@ -7,14 +7,43 @@
 </head>
 <body>
 
-<h1><a href="../part2/part2-1.html"><</a> <u>Part 3</u> <a href="../part4/part4-1.html">></a></h1>
-<p>Page 1</p>
+<script src="../navbarscroll.js"></script>
 
-<a href="part3-2.html"><p class="navright">Next ></a>
+<!--Page navigation-->
+
+<div id="navtop">
+  <div class="navleft">
+    <b><a href="../part2/part2-1.html"><</a></b>
+  </div>
+  <div class="navright">
+    <b><a href="../part4/part4-1.html">></a></b>
+  </div>
+  <b>Part 3</b>
+</div>
+
+<div id="navbottom">
+  <div class="navright">
+    <b><a href="part3-2.html">></a></b>
+  </div>
+  <div class="bottom">
+    <a href="../">Home</a>
+</div>
+  <b>1</b>, <a href="part3-2.html">2</a>, <a href="part3-3.html">3</a>
+</div>
+
+<!--Invisible page navigation stuff-->
+
+<div id="pagenext">
+  <a href="part3-2.html">
+    <button></button>
+  </a>
+</div>
+
+<!--Page image-->
 
 <div>
-</br>
-</br>
+<br>
+<br>
 <picture>
   <source srcset="page1.jpg" media="(max-width: 600px)">
   <source srcset="page1-hd.png" media="(max-width: 1500px)">
@@ -23,10 +52,8 @@
 </picture>
 </div>
 
-<a href="part3-2.html"><p class="navright">Next ></a>
-<a href="../index.html"><p class="center">Home</a>
-
-<p>Go to page <b>1</b>, <a href="part3-2.html">2</a>, <a href="part3-3.html">3</a></p>
+<br>
+<br>
 
 </body>
 </html>

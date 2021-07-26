@@ -2,6 +2,19 @@ body {
   background-color: #034258;
 }
 
+html {
+  overflow: scroll;
+  overflow-x: hidden;
+}
+::-webkit-scrollbar {
+  width: 0;  /* Remove scrollbar space */
+  background: transparent;  /* Optional: just make scrollbar invisible */
+}
+/* Optional: show position indicator in red */
+::-webkit-scrollbar-thumb {
+  background: #FF0000;
+}
+
 h1 {
   color: white;
   text-align: center;
@@ -49,21 +62,105 @@ a:active {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  max-width: 100%;
+  width: 100%;
+  max-width: 800px;
 }
 
 .bottom {
+  font-family: verdana;
   font-size: 10px;
   position: fixed;
   bottom: 0;
 }
 
+#navbottom .bottom {
+  font-family: verdana;
+  font-size: 10px;
+  position: fixed;
+  bottom: 5px;
+  left: 10px;
+}
+
+/* Page Navigation */
+
+#navtop{
+  border-style: solid;
+  border-color: rgba(8, 40, 92, 0.1);
+  background-color: rgba(8, 40, 92, 0.6);
+  position: fixed;
+  top: 0px;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  width: 100%;
+
+  transition: top 0.3s;
+
+  color: white;
+  text-align: center;
+  font-family: verdana;
+  font-size: 15px;
+  padding: 5px;
+}
+
+#navbottom{
+  border-style: solid;
+  border-color: rgba(8, 40, 92, 0.1);
+  background-color: rgba(8, 40, 92, 0.6);
+  position: fixed;
+  bottom: 0px;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  width: 100%;
+
+  transition: bottom 0.3s;
+
+  color: white;
+  text-align: center;
+  font-family: verdana;
+  font-size: 15px;
+  padding: 5px;
+}
+
 .navright {
   position: absolute;
-  right: 20%;
+  right: 30%;
 }
 
 .navleft {
   position: absolute;
-  left: 20%;
+  left: 30%;
+}
+
+/* Invisible Page Switch */
+
+#pagenext {
+  position: fixed;
+  top: 50%;
+  right: 26%;
+  width: 45%;
+  height: 89%;
+  transform: translate(50%, -50%);
+}
+
+#pageback {
+  position: fixed;
+  top: 50%;
+  left: 26%;
+  width: 45%;
+  height: 89%;
+  transform: translate(-50%, -50%);
+}
+
+#pagenext button {
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  border: none !important;
+}
+
+#pageback button {
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  border: none !important;
 }
