@@ -1,4 +1,4 @@
-/* Script that hides the navbar when scrolling down, and shows the navbar while scrolling up. */
+// Script that hides the navbar when scrolling down, and shows the navbar while scrolling up.
 var prevScrollpos = window.pageYOffset;
 window.onscroll = function() {
   var currentScrollPos = window.pageYOffset;
